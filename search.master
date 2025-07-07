@@ -1,0 +1,110 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="search.master.cs" Inherits="search" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+ <link rel="stylesheet" type="text/css" href="main2.css"/>
+    <title>Untitled Page</title>
+</head>
+    
+    <body style="text-align: center"><form id="form1" runat="server">
+        
+        <table style="width: 900px">
+            <tr>
+                <td colspan="3">
+                    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/logo.jpg" /></td>
+            </tr>
+        </table>
+        <br />
+        <table style="width: 900px">
+            <tr>
+                <td style="width: 162px; text-align: left" valign="top">
+                    <asp:Panel ID="Panel1" runat="server">
+                        <asp:LinkButton ID="LinkButton2" runat="server" Font-Underline="False" Height="19px"
+                            Width="148px" Font-Bold="True" OnClick="LinkButton2_Click">Main Menu</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton3" runat="server" Font-Underline="False" Height="19px"
+                            Width="148px" Font-Bold="True" OnClick="LinkButton3_Click">Search Application</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton5" runat="server" style="font-weight: 700" 
+                            Font-Underline="false" onclick="LinkButton5_Click">Application Tracking Summery</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton1" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="LinkButton1_Click" Width="148px">Log Inquiry Details</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbnProcessFile" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="ProcessFile_Click" Width="148px">Processing Files</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="btnGlSearch" runat="server" 
+                            
+                            Font-Bold="True" Font-Underline="False" 
+                            OnClick="lbnGlSearch" Width="148px">GL Section Search</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton4" runat="server" Font-Underline="False" Height="19px"
+                            Width="148px" Font-Bold="True" OnClick="LinkButton4_Click">Log Out</asp:LinkButton></asp:Panel>
+                    <br />
+                </td>
+                <td colspan="2" style="width:785px; vertical-align: top; text-align: left;">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </asp:contentplaceholder>
+                </td>
+            </tr>
+            </table>
+        <br />
+        <table style="width: 900px">
+            <tr>
+                <td colspan="3">
+                    <span style="font-size: 8pt; color: #aca899">Copyrights © 2007 National
+        Savings Bank<br />
+        All Rights Reserved.</span></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

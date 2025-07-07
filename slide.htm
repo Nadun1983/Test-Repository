@@ -1,0 +1,137 @@
+<!--
+
+SlideShow with Captions and Cross-Fade
+(C)2002 by CodeLifter.com
+
+Shows images and accompanying captions.
+Browsers: NS4-7,IE4-6
+Fade effect only in IE; degrades gracefully.
+NS4 shows default caption only.
+
+INSTRUCTIONS:
+
+Copy this entire script into a completely blank
+page.  Follow the commented instructions within.
+
+//-->
+
+<html>
+
+<head>
+
+<!-- 
+Set up the caption font in the following style.
+Place the style script in the head of the page.
+//-->
+
+
+
+<!-- 
+Place the following script in the head of the page.
+Follow the set-up instructions within the script.
+//-->
+
+<script>
+
+// (C) 2002 www.CodeLifter.com
+// http://www.codelifter.com
+// Free for all users, but leave in this header.
+
+// ==============================
+// Set the following variables...
+// ==============================
+
+// Set the slideshow speed (in milliseconds)
+var SlideShowSpeed = 3000;
+
+// Set the duration of crossfade (in seconds)
+var CrossFadeDuration = 3;
+
+var Picture = new Array(); // don't change this
+
+// Specify the image files...
+// To add more images, just continue
+// the pattern, adding to the array below.
+// To use fewer images, remove lines
+// starting at the end of the Picture array.
+// Caution: The number of Pictures *must*
+// equal the number of Captions!
+
+Picture[1]  = 'images/first.jpg';
+Picture[2]  = 'images/5.jpg';
+Picture[3]  = 'images/6.jpg';
+
+
+// Specify the Captions...
+// To add more captions, just continue
+// the pattern, adding to the array below.
+// To use fewer captions, remove lines
+// starting at the end of the Caption array.
+// Caution: The number of Captions *must*
+// equal the number of Pictures!
+
+
+
+// =====================================
+// Do not edit anything below this line!
+// =====================================
+
+var tss;
+var iss;
+var jss = 1;
+var pss = Picture.length-1;
+
+var preLoad = new Array();
+for (iss = 1; iss < pss+1; iss++){
+preLoad[iss] = new Image();
+preLoad[iss].src = Picture[iss];}
+
+function runSlideShow(){
+if (document.all){
+document.images.PictureBox.style.filter="blendTrans(duration=2)";
+document.images.PictureBox.style.filter="blendTrans(duration=CrossFadeDuration)";
+document.images.PictureBox.filters.blendTrans.Apply();}
+document.images.PictureBox.src = preLoad[jss].src;
+//if (document.getElementById) document.getElementById("CaptionBox").innerHTML= Caption[jss];
+if (document.all) document.images.PictureBox.filters.blendTrans.Play();
+jss = jss + 1;
+if (jss > (pss)) jss=1;
+tss = setTimeout('runSlideShow()', SlideShowSpeed);
+}
+
+</script>
+
+</head>
+
+<!--
+Add the onload=runSlideShow() event call to the body tag.
+//-->
+
+<body onload=runSlideShow()>
+
+<!--
+The following table holds the images and captions.
+Place the table in your page where you want the slideshow
+to appear.  Follow the instructions for each table cell.
+//-->
+
+<table border=0 cellpadding=0 cellspacing=0>
+  <tr>
+    <!--
+    The next table cell holds the images.
+    Set cell and image width and height the same.
+    The img src must have name=PictureBox in its
+    tag.  Usually the first image in the Picture
+    array in the script is used here.
+    //-->
+    <td width=350 height=280>
+    <p align="center"><img src=images/first.jpg name=PictureBox width=350 height=280></p>
+    </td>
+  </tr>
+  
+</table>
+
+</body>
+
+</html>
+

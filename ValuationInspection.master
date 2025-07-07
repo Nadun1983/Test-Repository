@@ -1,0 +1,64 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ValuationInspection.master.cs" Inherits="Valuation" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="text-align:center">
+        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/logo.jpg" /><br />
+        <table style="width: 900px">
+            <tr>
+                <td rowspan="3" style="width: 237px; text-align: left" valign="top">
+                    <asp:Panel ID="Panel1" runat="server">
+                        <asp:LinkButton ID="lbMainMenu" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            Width="160px" OnClick="lbMainMenu_Click1">Main Menu</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbValuationDetails" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="lbValuationDetails_Click" Width="160px" >Valuation Details</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbValuerPayment" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="lbValuerPayment_Click" Width="160px" >Valuer Payment</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbValuationCommisionPayment" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="lbValuationCommisionPayment_Click" Width="160px" >Commision Paymetns</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbnAllValuersDetails" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="lbnAllValuersDetails_Click" Width="160px" >Valuation Ledger</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbReceieveInspection" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="lbReceieveInspection_Click" Width="160px" >Receieve Inspection</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbInspectorPayment" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="lbInspectorPayment_Click" Width="160px" >Inspector Payment</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbLogOut" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="lbLogOut_Click" Width="160px" >Log Out</asp:LinkButton><br />
+                        </asp:Panel>
+                    <br />
+                </td>
+                <td colspan="2" rowspan="3" style="width: 785px; vertical-align: top; text-align: left;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+        </table>
+        </div>
+    </form>
+</body>
+</html>

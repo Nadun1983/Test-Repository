@@ -1,0 +1,140 @@
+
+
+<html>
+
+<head>
+<title></title>
+<script language="javascript" type="text/javascript">
+
+<!-- Begin
+//slider's width
+var swidth=200
+
+//slider's height
+var sheight=60
+
+//slider's speed
+var sspeed=2
+
+//messages: change to your own; use as many as you'd like; set up Hyperlinks to URLs as you normally do: <a target=... href="... URL ...">..message..</a>
+var singletext=new Array()
+singletext[0]='<br><br><div align="center"><font color=#9900FF><b>We offer wide variety of loan schemes for our valued customers<br><br>Mihidu Sevana Housing Loan<br><img src="images/mihidu.jpg" width="100" height="60" border="2"></FONT><br><br><a href="http://www.nsb.lk/pro_mihidusevana.asp" target="_blank">More Details</a><b>&nbsp;>>></b></div>'
+singletext[1]='<div align="center"><font color=#9900FF><b>Mihidu Sevana Special Housing Loan<br><img src="images/spmihidu.jpg" width="100" height="60" border="2"></font><br><br><a href="http://www.nsb.lk/pro_mihidusevanaspecial.asp" target="_blank">More Details</a><b>&nbsp;>>></b></div>'
+singletext[2]='<div align="center"><font color=#9900FF><b>Express Service Housing Loan<br><img src="images/express.jpg" width="100" height="60" border="2"></font><br><br><a href="http://www.nsb.lk/pro_geDoraExpress.asp" target="_blank">More Details</a><b>&nbsp;>>></b></div>'
+singletext[3]='<div align="center"><font color=#9900FF><b>Rata Ithuru Ge Dora Housing Loan<br><img src="images/rata.jpg" width="100" height="60" border="2"></font><br><br><a href="http://www.nsb.lk/pro_geDoraRataIthurum.asp" target="_blank">More Details</a>&nbsp;<b>>>></b></div>'
+singletext[4]='<div align="center"><font color=#9900FF><b>Ithurum Nivasa Housing Loan<br><img src="images/gedora.jpg" width="100" height="60" border="0"></font><br><br><a href="http://www.nsb.lk/pro_ithurumNivasa.asp" target="_blank">More Details</a><b>&nbsp;>>></b></div>'
+if (singletext.length>1)
+i=1
+else
+i=0
+function start(){
+if (document.all){
+ieslider1.style.top=sheight
+iemarquee(ieslider1)
+}
+else if (document.layers){
+document.ns4slider.document.ns4slider1.top=sheight
+document.ns4slider.document.ns4slider1.visibility='show'
+ns4marquee(document.ns4slider.document.ns4slider1)
+}
+else if (document.getElementById&&!document.all){
+document.getElementById('ns6slider1').style.top=sheight
+ns6marquee(document.getElementById('ns6slider1'))
+}
+}
+function iemarquee(whichdiv){
+iediv=eval(whichdiv)
+if (iediv.style.pixelTop>0&&iediv.style.pixelTop<=sspeed){
+iediv.style.pixelTop=0
+setTimeout("iemarquee(iediv)",100)
+}
+if (iediv.style.pixelTop>=sheight*-1){
+iediv.style.pixelTop-=sspeed
+setTimeout("iemarquee(iediv)",100)
+}
+else{
+iediv.style.pixelTop=sheight
+iediv.innerHTML=singletext[i]
+if (i==singletext.length-1)
+i=0
+else
+i++
+}
+}
+function ns4marquee(whichlayer){
+ns4layer=eval(whichlayer)
+if (ns4layer.top>0&&ns4layer.top<=sspeed){
+ns4layer.top=0
+setTimeout("ns4marquee(ns4layer)",100)
+}
+if (ns4layer.top>=sheight*-1){
+ns4layer.top-=sspeed
+setTimeout("ns4marquee(ns4layer)",100)
+}
+else{
+ns4layer.top=sheight
+ns4layer.document.write(singletext[i])
+ns4layer.document.close()
+if (i==singletext.length-1)
+i=0
+else
+i++
+}
+}
+function ns6marquee(whichdiv){
+ns6div=eval(whichdiv)
+if (parseInt(ns6div.style.top)>0&&parseInt(ns6div.style.top)<=sspeed){
+ns6div.style.top=0
+setTimeout("ns6marquee(ns6div)",100)
+}
+if (parseInt(ns6div.style.top)>=sheight*-1){
+ns6div.style.top=parseInt(ns6div.style.top)-sspeed
+setTimeout("ns6marquee(ns6div)",100)
+}
+else{
+ns6div.style.top=sheight
+ns6div.innerHTML=singletext[i]
+if (i==singletext.length-1)
+i=0
+else
+i++
+}
+}
+//  End -->
+</script>
+
+</head>
+
+<!-- STEP TWO: Insert the onLoad event handler into your BODY tag  -->
+
+<body onload="start()">
+
+<!-- STEP THREE: Copy this code into the BODY of your HTML document  -->
+
+<div align="center">
+<span style="width:200; height:60">
+<ilayer id="ns4slider" width="&{swidth};" height="&{sheight};">
+<layer id="ns4slider1" height="&{sheight};" onmouseover="sspeed=0;" onmouseout="sspeed=2">
+<script language="JavaScript" type="text/javascript">
+if (document.layers)
+document.write(singletext[0])
+</script>
+</layer></ilayer>
+<script language="JavaScript" type="text/javascript">
+if (document.all){
+document.writeln('<div style="position:relative;overflow:hidden;width:'+swidth+';height:'+sheight+';clip:rect(0 '+swidth+' '+sheight+' 0);" onmouseover="sspeed=0;" onmouseout="sspeed=2">')
+document.writeln('<div id="ieslider1" style="position:relative;width:'+swidth+';">')
+document.write(singletext[0])
+document.writeln('</div></div>')
+}
+if(document.getElementById&&!document.all){
+document.writeln('<div style="position:relative;overflow:hidden;width:'+swidth+';height:'+sheight+';clip:rect(0 '+swidth+' '+sheight+' 0);" onmouseover="sspeed=0;" onmouseout="sspeed=2">')
+document.writeln('<div id="ns6slider1" style="position:relative;width:'+swidth+';">')
+document.write(singletext[0])
+document.writeln('</div></div>')
+}
+</script></span>
+</div>
+</body>
+</html>
+

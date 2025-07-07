@@ -1,0 +1,93 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ApprovalPage.master.cs" Inherits="ApprovalPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+        <div style="text-align:center">
+            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/logo.jpg" /><table
+                style="width: 900px">
+                <tr>
+                    <td rowspan="3" style="width: 223px; height: 838px; text-align: left" valign="top">
+                        <asp:Panel ID="Panel1" runat="server">
+                            <asp:LinkButton ID="lbnMain" runat="server"
+                                Font-Bold="True" Font-Underline="False"
+                                OnClick="lbnMain_Click" Width="130px">Main Menu</asp:LinkButton><br />
+                            <br />
+                            <asp:LinkButton ID="lbnApproval" runat="server"
+                                Font-Bold="True" Font-Underline="False"
+                                Width="130px" OnClick="lbnApproval_Click">Approval</asp:LinkButton><br />
+                            <br />
+                            <asp:LinkButton ID="lbnReverse" runat="server"
+                                Font-Bold="True" Font-Underline="False"
+                                Width="130px" OnClick="lbnReverse_Click">Reverse Approval</asp:LinkButton><br />
+                            <br />
+                            <asp:LinkButton ID="lbnLogout" runat="server"
+                                Font-Bold="True" Font-Underline="False"
+                                OnClick="lbnLogout_Click" Width="130px">Log Out</asp:LinkButton>
+                            <br />
+                        </asp:Panel>
+                        <br />
+                    </td>
+                    <td colspan="2" rowspan="3" style="vertical-align: top; width: 785px; height: 838px;
+                        text-align: left">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                </tr>
+            </table>
+    </div>
+    </form>
+</body>
+</html>

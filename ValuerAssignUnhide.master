@@ -1,0 +1,106 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ValuerAssignUnhide.master.cs" Inherits="ValuerAssignUnhide" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="text-align:center">
+        &nbsp;<asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/logo.jpg"
+            /><br />
+        <table style="width: 900px">
+            <tr>
+                <td style="width: 208px; text-align: left" valign="top">
+                    <asp:Panel ID="Panel1" runat="server">
+                        <asp:LinkButton ID="lbnMain" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="lbnMain_Click" Width="170px" >Main Menu</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbnAssignValuer" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="lbnAssignValuer_Click" Width="170px" >Assign Valuer</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbnUnhideValuer" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="lbnUnhideValuer_Click" Width="170px" >Unhide Valuer</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbchangestatus" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="lbchangestatus_Click" Width="170px" >Change Status</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton1" runat="server"
+                            Font-Bold="True" 
+                            Font-Underline="False" Height="22px" OnClick="LinkButton1_Click"
+                            Width="170px">Valuation History Details</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton2" runat="server"
+                            Font-Bold="True" 
+                            Font-Underline="False" OnClick="LinkButton2_Click"
+                            Width="170px">Valuation Covering Letter</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="lbnAssignExistRec" runat="server" 
+                            
+                            Font-Bold="True"  Font-Underline="False" 
+                            OnClick="lbnAssignExistRec_Click" 
+                            Width="170px">Assign Existing Record</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="lbnLogout" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="lbnLogout_Click" Width="170px" >Log Out</asp:LinkButton>
+                    </asp:Panel>
+                    <br />
+                </td>
+                <td colspan="2" style="width: 785px">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            </table>
+    </div>
+    </form>
+</body>
+</html>
