@@ -1,0 +1,157 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdministrationHome.master.cs" Inherits="Administration_AdministrationHome" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+body 
+{
+	   
+}
+        .style1
+        {
+            width: 142px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="text-align:center">
+        &nbsp;<table style="width: 900px">
+            <tr>
+                <td>
+                    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/logo.jpg" /></td>
+            </tr>
+        </table>
+        <br />
+        <table style="width: 900px">
+            <tr>
+                <td style="text-align: left" valign="top" class="style1">
+                    <asp:Panel ID="Panel1" runat="server">
+                        <asp:LinkButton ID="lbnMain" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="lbnMain_Click" Width="150px" 
+                            >Main Menu</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbnAdduser" runat="server"
+                            Font-Bold="True" 
+                            
+                            Font-Underline="False" OnClick="lbnAdduser_Click"
+                            Width="150px">User Details</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbnAddInspector" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="lbnAddInspector_Click" 
+                            Width="150px" >Add Inspector</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbnAddValuer" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="lbnAddValuer_Click" 
+                            Width="150px" >Add Valuer</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbnAddDistrict" runat="server"
+                            Font-Bold="True" 
+                            
+                            Font-Underline="False" OnClick="AddDistrictToValuer"
+                            Width="150px">Add Distric To Valuer</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbnAddLoanType" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                            OnClick="lbnAddLoanType_Click" 
+                            Width="150px" >Add Loan type</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbnRecProcess" runat="server"
+                            Font-Bold="True" 
+                            
+                            Font-Underline="False" OnClick="lbnRecProcess_Click"
+                            Width="150px">Recovery Process</asp:LinkButton><br />
+                        <br />
+                        <asp:LinkButton ID="lbnEditGlCode" runat="server"
+                            Font-Bold="True" 
+                            
+                            Font-Underline="False" OnClick="lbnEditGlCode_Click"
+                            Width="150px">Edit GL Code</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="lbnEditGlCode0" runat="server" 
+                            
+                            Font-Bold="True"  Font-Underline="False" 
+                            OnClick="lbnEditGlCode0_Click" Width="150px">Add 
+                        New GL Account</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="lbnEditGlCode1" runat="server" 
+                            
+                            Font-Bold="True"  Font-Underline="False" 
+                            OnClick="lbnEditGlCode0_Click" Width="150px">Add 
+                        Trans Table</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="lbnLogout" runat="server"
+                            Font-Bold="True" Font-Underline="False"
+                             Width="150px" 
+                             OnClick="lbnLogout_Click">Log Out</asp:LinkButton></asp:Panel>
+                    <br />
+                </td>
+                <td style="vertical-align: top; width: 796px; text-align: left">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            </table>
+        <br />
+        <table style="width: 900px">
+            <tr>
+                <td>
+                    <span style="font-size: 8pt; color: #aca899">Copyrights © 2007 National Savings Bank<br />
+                        All Rights Reserved.</span></td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

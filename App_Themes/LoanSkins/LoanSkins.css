@@ -1,0 +1,20 @@
+﻿body 
+{
+	font-family: Verdana; 
+	font-size: Small; 
+	color: #8C4510
+}
+
+table 
+{
+	font-family: Verdana; 
+	font-size: Small; 
+	color: #8C4510;
+	border: solid thin #808000;
+}
+td
+{
+	font-family: Verdana; 
+	font-size: Small; 
+	color: #8C4510
+}
